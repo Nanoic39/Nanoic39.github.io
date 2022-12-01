@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="/*dark*/">
+<html lang="zh-CN">
 
-<head>
+	<head>
     <!-- 基础信息 -->
     <meta charset="utf-8">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
@@ -14,68 +14,22 @@
     <meta name="author" content="Nanoic">
     <title>Nanoic的个人主页</title>
 
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+	</head>
 
-	<!-- Import style -->
-	<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
-	<!-- Import Vue 3 -->
-	<script src="//unpkg.com/vue@3"></script>
-	<!-- Import component library -->
-  	<script src="//unpkg.com/element-plus"></script>
-</head>
+	<body>
+  	<!-- 主体 -->
+		<div id="main">
+      <div style="width: 100px;height: 100px;">TEST content</div>
 
-<body>
-    <!-- 主体 -->
-	<div id="app">
-    <template>
-      <div class="common-layout">
-        <el-container>
-          <el-aside width="200px" style="background-color: #409EFF;">Aside</el-aside>
-          <el-container>
-            <el-header>Header</el-header>
-            <el-main>
-              <template>
-                <el-scrollbar height="400px">
-                  <p v-for="item in 20" :key="item" class="scrollbar-demo-item">{{ item }}</p>
-                </el-scrollbar>
-              </template>
-            </el-main>
-          </el-container>
-        </el-container>
-      </div>
-    </template>
-  </div>
-      <script>
-        const App = {
-          data() {
-            return {
-            };
-          },
-        };
-        const app = Vue.createApp(App);
-        app.use(ElementPlus);
-        app.mount("#app");
-      </script>
+  	</div>
 
-<style scoped>
-  .scrollbar-demo-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 4px;
-    background: var(--el-color-primary-light-9);
-    color: var(--el-color-primary);
-  }
-  </style>
+
 
     <!-- noscript -->
     <noscript>
         <div class="noscript fixed-top">请开启 JavaScript</div>
     </noscrip>
-</body>
+	</body>
 
 </html>
