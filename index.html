@@ -28,33 +28,25 @@
 <body>
     <!-- 主体 -->
 	<div id="app">
-        <template>
-            <div class="common-layout">
-              <el-container>
-                <el-header>Header</el-header>
-                <el-container>
-                  <el-aside width="200px">Aside</el-aside>
-                  <el-main>Main</el-main>
-                </el-container>
-              </el-container>
-            </div>
-          </template>
-		{{ message }}
-    </div>
+        <el-button>{{ message }}</el-button>
+      </div>
+      <script>
+        const App = {
+          data() {
+            return {
+              message: "Hello Element Plus",
+            };
+          },
+        };
+        const app = Vue.createApp(App);
+        app.use(ElementPlus);
+        app.mount("#app");
+      </script>
 
     <!-- noscript -->
     <noscript>
         <div class="noscript fixed-top">请开启 JavaScript</div>
     </noscrip>
-
-    <script>
-        var app = new Vue({
-  			el: '#app',
-  			data: {
-    			message: 'Hello Vue!'
-  			}
-		})
-    </script>
 </body>
 
 </html>
