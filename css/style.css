@@ -7,3 +7,10 @@
     background-color: #409EFF;
     
 }
+
+.box-main-left{
+    min-height: 100px;
+}
+.main-title{
+    margin-top: 20px;
+}
